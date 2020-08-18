@@ -1,7 +1,10 @@
 package first;
 
+import lombok.extern.java.Log;
+
 import java.time.LocalTime;
 
+@Log
 public class Alarm {
 
     private LocalTime time;
@@ -32,7 +35,7 @@ public class Alarm {
     }
 
     public void toAlarm() {
-        System.out.println("Alarm...");
+
     }
 
     private void addShift(int shift, LocalTime time) {
