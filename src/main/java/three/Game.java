@@ -2,7 +2,10 @@ package three;
 
 import lombok.ToString;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.Scanner;
 
 public class Game {
     private static final int CARD_COUNT = 30;
@@ -10,7 +13,6 @@ public class Game {
 
     private static int positiveIterator = 0;
     private static int negativeIterator = 0;
-    private static int ALL_COUNT = positiveIterator + negativeIterator;
 
     static {
         for (int i = 1; i < CARD_COUNT; i++) {
@@ -101,11 +103,6 @@ class Player1 implements ScoreInstrument {
     public void plusScore() {
         score++;
     }
-
-    public int getWinScore() {
-        return winScore;
-    }
-
 
     @Override
     public String toString() {
